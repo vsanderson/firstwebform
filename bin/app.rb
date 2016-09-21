@@ -23,3 +23,6 @@ get '/list/' do
 	erb :list_form
 end
 
+post '/list/' do
+
+end
