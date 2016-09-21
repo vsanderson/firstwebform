@@ -19,3 +19,7 @@ post '/hello/' do
     erb :index, :locals => {'greeting' => greeting, 'name' => name}
 end
 
+get '/list/' do
+	erb :list_form
+end
+
