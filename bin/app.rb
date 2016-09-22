@@ -5,6 +5,8 @@ set :static, true
 set :public_folder, "static"
 set :views, "views"
 
+
+
 get '/' do
     return 'Hello world'
 end
@@ -23,6 +25,12 @@ get '/list/' do
 	erb :list_form
 end
 
-post '/list/' do
+post '/afterlist/' do
+	greeting = params[:greeting] || "default greeting"
+	name = params[:name] || "default name"
+	@list = {name => greeting}
+	puts @list 
+	
+	erb :after_list
 
 end
