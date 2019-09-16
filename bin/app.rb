@@ -1,5 +1,6 @@
 require 'sinatra'
 
+# set port to 8080 for cloud9
 set :port, 8080
 set :static, true
 set :public_folder, "static"
